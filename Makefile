@@ -6,11 +6,11 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/25 13:47:39 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/25 13:55:28 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c
+SRC		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c
 OBJ		= $(SRC:.c=.o)
 CC 		= gcc
 AR 		= ar rc
@@ -40,4 +40,4 @@ test: 		${NAME}
 		${CC} ${CFLAGS} main.c -L. -lft -o test.o
 
 lint:		fclean
-		${NORM_BIN} ${NORM_FLAGS} 
+		${NORM_BIN} ${NORM_FLAGS}
