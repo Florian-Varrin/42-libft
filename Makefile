@@ -6,13 +6,13 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/25 11:55:40 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/25 12:10:04 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC_DIR		= srcs
 HEADER_DIR	= includes
-SRC		= ${SRC_DIR}/ft_isalpha.c ${SRC_DIR}/ft_isdigit.c
+SRC		= ${SRC_DIR}/ft_isalpha.c ${SRC_DIR}/ft_isdigit.c ${SRC_DIR}/ft_isalnum.c
 OBJ		= $(SRC:.c=.o)
 CC 		= gcc
 AR 		= ar rc
