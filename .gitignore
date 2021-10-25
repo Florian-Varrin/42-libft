@@ -1,0 +1,6 @@
+*.swp
+*.swo
+*.o
+libintarr
+.cache
+main.c
