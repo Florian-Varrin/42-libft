@@ -6,19 +6,21 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/25 14:01:47 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/25 14:29:56 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c
+SRC		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c
 OBJ		= $(SRC:.c=.o)
 CC 		= gcc
 AR 		= ar rc
 NAME 		= libft.a
+TESTNAME	= test.o
 NORM_BIN	= norminette
 NORM_FLAGS	= -RCheckForbiddenSourceHeader -RCheckDefine
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror -I.
+TESTFLAGS	= -L. -lft
 
 .PHONY: 	all clean fclean re
 
@@ -37,7 +39,6 @@ fclean: 	clean
 re:		fclean ${NAME}
 
 test: 		${NAME}
-		${CC} ${CFLAGS} main.c -L. -lft -o test.o
-
+		${CC} ${CFLAGS} main.c ${TESTFLAGS} -o ${TESTNAME}
 lint:		fclean
 		${NORM_BIN} ${NORM_FLAGS}
