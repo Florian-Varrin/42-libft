@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 14:06:10 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/25 14:38:56 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/27 11:01:43 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	*ft_memset(void *b, int c, size_t len)
 	str = b;
 	while (i < len)
 		str[i++] = (unsigned char)c;
-	return b;
+	return (b);
 }
