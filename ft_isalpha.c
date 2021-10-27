@@ -6,9 +6,11 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:24:16 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/27 12:07:49 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/27 12:19:15 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 int	ft_isupper(int c)
 {

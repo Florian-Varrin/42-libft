@@ -6,10 +6,11 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 13:58:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/25 14:03:52 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/27 12:20:20 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 #include <string.h>
 
 size_t	ft_strlen(char *str)
