@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/27 16:02:13 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/27 16:13:18 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 #endif
