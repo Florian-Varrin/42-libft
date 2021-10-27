@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/27 11:16:06 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/27 11:49:25 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ fclean: 	clean
 re:		fclean ${NAME}
 
 test: 		${NAME}
-		${CC} ${CFLAGS} main.c ${TESTFLAGS} -o ${TESTNAME}
+		cd libftTester && make m
+		# ${CC} ${CFLAGS} main.c ${TESTFLAGS} -o ${TESTNAME}
 lint:		fclean
 		${NORM_BIN} ${NORM_FLAGS}

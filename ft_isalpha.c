@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:24:16 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/25 11:29:24 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/27 12:07:49 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isupper(int c)
 
 int	ft_islower(int c)
 {
-	if (c >= 97 && c <= 127)
+	if (c >= 97 && c <= 122)
 		return (1);
 	return (0);
 }
