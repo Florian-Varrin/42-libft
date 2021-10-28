@@ -6,13 +6,13 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/28 11:16:07 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/28 11:47:53 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC		= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 		  	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c \
-			ft_strnstr.c
+			ft_strnstr.c ft_atoi.c
 OBJ		= $(SRC:.c=.o)
 CC 		= gcc
 AR 		= ar rc
