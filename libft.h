@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 12:19:33 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/28 13:57:43 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,5 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 #endif
