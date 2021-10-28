@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 14:13:12 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 14:45:38 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/28 21:04:18 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*start;
 	char	*str;
 
+	if (!s1)
+		return (NULL);
 	len = ft_strlen((char *)s1);
 	start = ft_trimset(s1, set, &len);
 	str = malloc(sizeof(char) * (len + 1));

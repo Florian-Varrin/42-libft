@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 11:58:15 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 13:48:45 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/28 21:01:48 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strdup(const char *s1)
 
 	len = ft_strlen((char *)s1);
 	cpy = (char *)malloc(sizeof(char) * (len + 1));
+	if (!cpy)
+		return (NULL);
 	i = 0;
 	while (s1[i])
 	{

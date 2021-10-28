@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 18:27:37 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 18:37:58 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/28 21:04:37 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 	char	*str;
 
+	if (!s)
+		return (NULL);
 	str_len = ft_strlen((char *)s);
 	str = malloc(sizeof(char) * (str_len + 1));
 	if (!str)
