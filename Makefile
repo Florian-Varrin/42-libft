@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/28 20:45:16 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/28 21:11:57 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ clean:
 
 fclean: 	clean
 		${RM} ${NAME}
-		${RM} ${DNAME}
+		${RM} ${TESTNAME}
 
 re:		fclean ${NAME}
 
