@@ -6,23 +6,23 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 11:58:15 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 12:11:54 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/28 13:48:45 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 #include <stdlib.h>
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	int		i;
 	int		len;
 	char	*cpy;
-	
+
 	len = ft_strlen((char *)s1);
 	cpy = (char *)malloc(sizeof(char) * (len + 1));
 	i = 0;
-	while(s1[i])
+	while (s1[i])
 	{
 		cpy[i] = s1[i];
 		i++;

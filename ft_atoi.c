@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 11:29:15 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 11:49:09 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/28 13:47:55 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 _Bool	ft_isspace(const char c)
 {
 	if (c == '\t' || c == '\n' || c == '\v'
-			|| c == '\f' || c == '\r' || c == ' ')
+		|| c == '\f' || c == '\r' || c == ' ')
 		return (true);
 	return (false);
 }
