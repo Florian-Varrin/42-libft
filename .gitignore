@@ -5,4 +5,5 @@ libft.a
 .cache
 main.c
 libftTester
+ft_split_tester
 
