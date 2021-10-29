@@ -6,11 +6,11 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 10:51:45 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/27 12:19:20 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:29:27 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 #include <string.h>
 
 void	ft_bzero(void *s, size_t n)

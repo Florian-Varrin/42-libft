@@ -6,16 +6,16 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 14:13:12 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 21:04:18 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:40:05 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <libft.h>
 
-_Bool	ft_isincharset(char c, char const *set)
+static _Bool	ft_isincharset(char c, char const *set)
 {
 	int		i;
 
@@ -32,7 +32,7 @@ _Bool	ft_isincharset(char c, char const *set)
 /**
  * Return pointer to start of trimed string and write it's length in len variable
 **/
-char	*ft_trimset(char const *s1, char const *set, int *len)
+static char	*ft_trimset(char const *s1, char const *set, int *len)
 {
 	int		i;
 	char	*start;

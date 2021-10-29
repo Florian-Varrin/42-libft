@@ -6,16 +6,16 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 16:28:57 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 17:26:51 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:39:34 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <libft.h>
 
-int	ft_wordlen(char const *s, char c)
+static int	ft_wordlen(char const *s, char c)
 {
 	int		i;
 
@@ -25,7 +25,7 @@ int	ft_wordlen(char const *s, char c)
 	return (i);
 }
 
-int	ft_count_word(char const *s, char c)
+static int	ft_count_word(char const *s, char c)
 {
 	_Bool	is_in_word;
 	int		i;
@@ -54,7 +54,7 @@ int	ft_count_word(char const *s, char c)
 	return (word_count);
 }
 
-char	**ft_free_res(char **res, int words)
+static char	**ft_free_res(char **res, int words)
 {
 	int		i;
 
@@ -70,7 +70,7 @@ char	**ft_free_res(char **res, int words)
 	return (NULL);
 }
 
-char	**ft_fill_res(char const *s, char c, char ***res, int word_count)
+static char	**ft_fill_res(char const *s, char c, char ***res, int word_count)
 {
 	int		i;
 	int		j;

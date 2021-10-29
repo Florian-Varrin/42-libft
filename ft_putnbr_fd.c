@@ -6,12 +6,12 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 20:24:17 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/29 12:05:25 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:34:04 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <unistd.h>
-#include <libft.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {

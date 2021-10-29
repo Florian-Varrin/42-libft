@@ -6,15 +6,15 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 17:31:21 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 18:26:08 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:38:57 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <libft.h>
 
-int	ft_count_chars(int n)
+static int	ft_count_chars(int n)
 {
 	int		number_of_chars;
 

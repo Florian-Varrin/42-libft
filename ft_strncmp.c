@@ -6,10 +6,11 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 16:05:39 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/27 16:12:40 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:35:39 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

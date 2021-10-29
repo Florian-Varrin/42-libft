@@ -6,13 +6,13 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 11:50:34 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 11:56:55 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:29:59 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 #include <stdlib.h>
-#include <libft.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {

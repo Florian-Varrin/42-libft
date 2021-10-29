@@ -6,14 +6,14 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 11:29:15 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 13:47:55 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:38:23 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 #include <stdbool.h>
 
-_Bool	ft_isspace(const char c)
+static _Bool	ft_isspace(const char c)
 {
 	if (c == '\t' || c == '\n' || c == '\v'
 		|| c == '\f' || c == '\r' || c == ' ')

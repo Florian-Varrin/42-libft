@@ -6,20 +6,20 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:24:16 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/27 12:19:15 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:38:42 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int	ft_isupper(int c)
+static int	ft_isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 		return (1);
 	return (0);
 }
 
-int	ft_islower(int c)
+static int	ft_islower(int c)
 {
 	if (c >= 97 && c <= 122)
 		return (1);

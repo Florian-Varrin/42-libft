@@ -6,14 +6,14 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 12:13:17 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 13:49:38 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 16:36:21 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <libft.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

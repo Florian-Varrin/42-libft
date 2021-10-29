@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/10/28 21:11:57 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/10/29 16:42:35 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,12 +18,10 @@ OBJ		= $(SRC:.c=.o);
 CC 		= gcc
 AR 		= ar rc
 NAME 		= libft.a
-TESTNAME	= test.o
 NORM_BIN	= norminette
 NORM_FLAGS	= -RCheckForbiddenSourceHeader -RCheckDefine
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror -I.
-TESTFLAGS	= -L. -lft
 
 .PHONY: 	all clean fclean re
 
@@ -37,15 +35,8 @@ clean:
 
 fclean: 	clean
 		${RM} ${NAME}
-		${RM} ${TESTNAME}
 
 re:		fclean ${NAME}
 
-main:		${NAME}
-		${CC} ${CFLAGS} main.c ${TESTFLAGS} -o ${TESTNAME}
-		./${TESTNAME}
-
-test: 		${NAME}
-		cd libftTester && make m
 lint:		fclean
 		${NORM_BIN} ${NORM_FLAGS}
