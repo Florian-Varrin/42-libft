@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 11:04:00 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/28 21:07:06 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 12:17:21 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t		i;
 
 	i = 0;
-	if (dst == NULL || src == NULL)
+	if (dst == NULL && src == NULL)
 		return (dst);
 	while (i < n)
 	{

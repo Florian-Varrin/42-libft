@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/27 11:38:10 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/10/27 14:14:58 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/10/29 12:17:39 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 {
 	int		i;
 
-	if (dst == NULL || src == NULL)
+	if (dst == NULL && src == NULL)
 		return (dst);
 	if (src > dst)
 		return (ft_memcpy(dst, src, n));
