@@ -3,7 +3,4 @@
 *.o
 libft.a
 .cache
-main.c
-libftTester
-ft_split_tester
-tests
+compile_commands.json
