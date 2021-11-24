@@ -1,38 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/28 11:29:15 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/11/24 13:22:28 by fvarrin          ###   ########.fr       */
+/*   Created: 2021/11/24 13:21:39 by fvarrin           #+#    #+#             */
+/*   Updated: 2021/11/24 13:23:34 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdbool.h>
 
-int	ft_atoi(const char *str)
+_Bool	ft_isspace(const char c)
 {
-	int		sign;
-	int		res;
-
-	while (ft_isspace(*str))
-		str++;
-	sign = 1;
-	if (*str == '+')
-		str++;
-	else if (*str == '-')
-	{
-		sign = -1;
-		str++;
-	}
-	res = 0;
-	while (*str >= '0' && *str <= '9')
-	{
-		res *= 10;
-		res += (*str - 48);
-		str++;
-	}
-	return (res * sign);
+	if (c == '\t' || c == '\n' || c == '\v'
+		|| c == '\f' || c == '\r' || c == ' ')
+		return (true);
+	return (false);
 }
