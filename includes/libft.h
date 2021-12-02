@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/02 17:05:17 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/02 17:06:21 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,5 @@ void	ft_build_decimalbase(char *dest);
 void	ft_build_hexabase_lower(char *dest);
 void	ft_build_hexabase_upper(char *dest);
 void	ft_build_binary_base(char dest[3]);
-void	ft_build_binary_base(char )
+void	ft_build_binary_base(char dest[3]);
 #endif
