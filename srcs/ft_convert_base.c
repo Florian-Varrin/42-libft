@@ -6,7 +6,7 @@
 /*   By: fvarrin <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 15:32:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/02 14:25:38 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/02 16:29:36 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static int	ft_base_has_error(char *base)
 	return (0);
 }
 
-void	ft_countnbr_base(int nbr, char *base, int *count)
+static void	ft_countnbr_base(int nbr, char *base, int *count)
 {
 	int		base_n;
 
@@ -53,7 +53,7 @@ void	ft_countnbr_base(int nbr, char *base, int *count)
 	}
 }
 
-void	ft_writenbr_base(int nbr, char *base, char *dest)
+static void	ft_writenbr_base(int nbr, char *base, char *dest)
 {
 	int				base_n;
 
