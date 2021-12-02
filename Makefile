@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/12/02 14:33:10 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/12/02 16:57:51 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,8 @@ NAME 		= libft.a
 NORM_BIN	= norminette
 NORM_FLAGS	= -RCheckForbiddenSourceHeader -RCheckDefine
 RM		= rm -f
+NORM_BIN		= norminette
+NORM_FLAGS		= -RCheckForbiddenSourceHeader -RCheckDefine
 CFLAGS		= -Wall -Wextra -Werror -I${HEADER_DIR}
 
 .PHONY: 	all clean fclean re
@@ -44,3 +46,7 @@ re:		fclean ${NAME}
 
 lint:		fclean
 		${NORM_BIN} ${NORM_FLAGS}
+
+norm:		fclean
+		echo "\n\n"
+		${NORM_BIN} ${NORM_FLAGS} ${SRC}
