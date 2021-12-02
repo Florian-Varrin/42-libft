@@ -6,13 +6,14 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/02 14:26:37 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/02 14:32:28 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+#include "ft_printf.h"
 # include <string.h>
 
 int		ft_isalpha(int c);
@@ -56,4 +57,8 @@ void	ft_putnbr_fd(int n, int fd);
 int		ft_printf(const char *str, ...);
 int		ft_count_occurrence(char *str, char c);
 char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
+void	ft_build_decimalbase(char *dest);
+void	ft_build_hexabase_lower(char *dest);
+void	ft_build_hexabase_upper(char *dest);
+void	ft_build_binary_base(char dest[3]);
 #endif

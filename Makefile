@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/12/02 14:26:57 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/12/02 14:33:10 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC		= $(addprefix ${SRC_DIR}, ft_isalpha.c ft_isdigit.c ft_isspace.c ft_isalnum
 		  	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c \
 			ft_strnstr.c ft_atoi.c ft_atoi_base.c ft_calloc.c ft_strdup.c ft_strndup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
 			ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_swap.c ft_printf.c ft_printf_put.c ft_printf_utils.c ft_count_occurence.c \
-			ft_convert_base.c)
+			ft_convert_base.c ft_base_utils.c)
 OBJ		= $(SRC:.c=.o);
 CC 		= gcc
 AR 		= ar rc
