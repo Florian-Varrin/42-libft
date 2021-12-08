@@ -6,12 +6,13 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/02 17:06:21 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/08 11:00:19 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 
 # include <string.h>
 
@@ -44,8 +45,10 @@ char	*ft_strdup(const char *s1);
 char	*ft_strndup(const char *s1, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin_and_free(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+char	ft_get_last_char(char *str);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
@@ -61,4 +64,5 @@ void	ft_build_hexabase_lower(char *dest);
 void	ft_build_hexabase_upper(char *dest);
 void	ft_build_binary_base(char dest[3]);
 void	ft_build_binary_base(char dest[3]);
+char	*ft_get_next_line(int fd);
 #endif
