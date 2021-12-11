@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 13:36:22 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/08 11:15:01 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/11 17:28:48 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,6 @@ char	*ft_get_next_line(int fd)
 	static char	buf[BUFFER_SIZE] = {0};
 	char		*str;
 
-	ft_printf("BUFFER_SIZE %d\n", BUFFER_SIZE);
 	str = malloc(sizeof(char));
 	str[0] = 0;
 	str = read_buffer(fd, buf, str, false);
