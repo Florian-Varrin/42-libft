@@ -6,15 +6,15 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 12:12:54 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/13 13:22:09 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 12:56:06 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+t_list_el	*ft_lstlast(t_list_el *lst)
 {
-	t_list	*current_el;
+	t_list_el	*current_el;
 
 	if (!lst)
 		return (NULL);

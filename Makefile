@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/12/15 12:08:56 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/12/15 12:58:28 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 ifndef BUFFER_SIZE
@@ -15,7 +15,7 @@ endif
 
 ROOT_DIR	?= $(shell pwd)
 SRC_DIR		= ${ROOT_DIR}/srcs/
-LINKED_LIST_DIR	= ${SRC_DIR}/linked-list/
+LINKED_LIST_DIR	= ${SRC_DIR}linked-list/
 HEADER_DIR 	= ${ROOT_DIR}/includes/
 SRC		= $(addprefix ${SRC_DIR}, ft_isalpha.c ft_isdigit.c ft_isspace.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 		  	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c \

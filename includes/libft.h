@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/15 12:08:43 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 12:53:34 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 # include <string.h>
 
-typedef struct	s_list
+typedef struct	s_list_el
 {
 	void			*content;
-	struct s_list	*next;
-}	t_list;
+	struct s_list_el	*next;
+}	t_list_el;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -72,13 +72,13 @@ void	ft_build_binary_base(char dest[3]);
 char	*ft_get_next_line(int fd);
 
 // Linked list
-t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **alst, t_list *new);
-void	ft_lstadd_back(t_list **alst, t_list *new);
-int		ft_lstsize(t_list *lst);
-t_list	*ft_lstlast(t_list *lst);
-void	ft_lstdelone(t_list *lst, void (*del)(void*));
-void	ft_lstclear(t_list **lst, void (*del)(void*));
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));
+t_list_el	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list_el **alst, t_list_el *new);
+void	ft_lstadd_back(t_list_el **alst, t_list_el *new);
+int		ft_lstsize(t_list_el *lst);
+t_list_el	*ft_lstlast(t_list_el *lst);
+void	ft_lstdelone(t_list_el *lst, void (*del)(void*));
+void	ft_lstclear(t_list_el **lst, void (*del)(void*));
+void	ft_lstiter(t_list_el *lst, void (*f)(void *));
+t_list_el	*ft_lstmap(t_list_el *lst, void *(*f)(void *),void (*del)(void *));
 #endif

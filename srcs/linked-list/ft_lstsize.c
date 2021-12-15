@@ -6,15 +6,15 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 12:07:35 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/13 12:11:21 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 12:56:43 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list_el *lst)
 {
-	t_list	*current_el;
+	t_list_el	*current_el;
 	int		count;
 
 	if (!lst)

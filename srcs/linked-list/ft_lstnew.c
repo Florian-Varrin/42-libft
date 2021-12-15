@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 11:33:01 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/15 10:58:24 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 12:55:22 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 #include <stdlib.h>
 
-t_list	*ft_lstnew(void *content)
+t_list_el	*ft_lstnew(void *content)
 {
-	t_list	*el;
+	t_list_el	*el;
 
-	el = (t_list *)malloc(sizeof(t_list));
+	el = (t_list_el *)malloc(sizeof(t_list_el));
 	if (!el)
 		return (NULL);
 	el->content = content;
