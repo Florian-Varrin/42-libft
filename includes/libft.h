@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/15 12:53:34 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 13:33:21 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strcmp(const char *s1, const char *s2);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
@@ -73,12 +74,12 @@ char	*ft_get_next_line(int fd);
 
 // Linked list
 t_list_el	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list_el **alst, t_list_el *new);
-void	ft_lstadd_back(t_list_el **alst, t_list_el *new);
-int		ft_lstsize(t_list_el *lst);
+void		ft_lstadd_front(t_list_el **alst, t_list_el *new);
+void		ft_lstadd_back(t_list_el **alst, t_list_el *new);
+int			ft_lstsize(t_list_el *lst);
 t_list_el	*ft_lstlast(t_list_el *lst);
-void	ft_lstdelone(t_list_el *lst, void (*del)(void*));
-void	ft_lstclear(t_list_el **lst, void (*del)(void*));
-void	ft_lstiter(t_list_el *lst, void (*f)(void *));
+void		ft_lstdelone(t_list_el *lst, void (*del)(void*));
+void		ft_lstclear(t_list_el **lst, void (*del)(void*));
+void		ft_lstiter(t_list_el *lst, void (*f)(void *));
 t_list_el	*ft_lstmap(t_list_el *lst, void *(*f)(void *),void (*del)(void *));
 #endif
