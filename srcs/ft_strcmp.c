@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 13:29:25 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/15 13:29:44 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 13:50:11 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,6 @@
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	unsigned int	i;
-
-	i = -1;
 	while (*s1 && *s2 && (*s1 == *s2))
 	{
 		s1++;
