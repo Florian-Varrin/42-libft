@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 12:00:13 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/13 12:10:03 by fvarrin          ###   ########.fr       */
+/*   Updated: 2021/12/15 10:50:59 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_lstadd_front(t_list **alst, t_list *new)
 {
-	while ((*alst)->next)
-		alst++;
-	(*alst)->next = new;
+	if (!alst || !new)
+		return ;
+	new->next = *alst;
+	*alst = new;
 }

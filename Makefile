@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2021/12/13 12:15:00 by fvarrin          ###   ########.fr        #
+#    Updated: 2021/12/15 10:29:42 by fvarrin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 ifndef BUFFER_SIZE
@@ -22,7 +22,7 @@ SRC		= $(addprefix ${SRC_DIR}, ft_isalpha.c ft_isdigit.c ft_isspace.c ft_isalnum
 			ft_strnstr.c ft_atoi.c ft_atoi_base.c ft_calloc.c ft_strdup.c ft_strndup.c ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c \
 			ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_swap.c ft_printf.c ft_printf_put.c ft_printf_utils.c ft_count_occurence.c \
 			ft_convert_base.c ft_base_utils.c ft_get_last_char.c ft_get_next_line.c)
-LINKED_LIST_SRC	= $(addprefix ${LINKED_LIST_DIR}, ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c)
+LINKED_LIST_SRC	= $(addprefix ${LINKED_LIST_DIR}, ft_lstnew.c ft_lstadd_front.c ft_lstadd_back.c ft_lstsize.c ft_lstlast.c)
 OBJ		= $(SRC:.c=.o);
 LINKED_LIST_OBJ	= $(LINKED_LIST_SRC:.c=.o);
 CC 		= gcc
@@ -37,21 +37,22 @@ CFLAGS		= -Wall -Wextra -Werror -I${HEADER_DIR} -D BUFFER_SIZE=${BUFFER_SIZE}
 
 .PHONY: 	all clean fclean re
 
-all:		${NAME} bonus
+all:		${NAME} ll
 
 ${NAME}:	${OBJ}
 		${AR} ${NAME} ${OBJ}
 
-bonus:		${NAME} ${LINKED_LIST_OBJ}
+ll:		${NAME} ${LINKED_LIST_OBJ}
 		${AR} ${NAME} ${LINKED_LIST_OBJ}
 
 clean:
 		${RM} ${OBJ}
+		${RM} ${LINKED_LIST_OBJ}
 
 fclean: 	clean
 		${RM} ${NAME}
 
-re:		fclean ${NAME} bonus
+re:		fclean ${NAME} ll
 
 lint:		fclean
 		${NORM_BIN} ${NORM_FLAGS}
