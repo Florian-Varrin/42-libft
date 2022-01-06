@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 13:36:22 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/12/11 17:28:48 by fvarrin          ###   ########.fr       */
+/*   Updated: 2022/01/06 17:37:58 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,10 @@ static int	fill_buffer(int fd, char *buf)
 	return (r);
 }
 
-static int	handle_buffer(int fd, char *buf, char *str, int *buf_cursor)
+static int	handle_buffer(int fd, char *buf, int *buf_cursor)
 {
 	int		bytes_read;
 
-	(void) str;
 	bytes_read = fill_buffer(fd, buf);
 	if (bytes_read <= 0)
 		return (1);
@@ -72,7 +71,7 @@ static char	*read_buffer(int fd, char *buf, char *str, _Bool force_fill_buffer)
 
 	if (force_fill_buffer || buf[0] == '\0' || buf_cursor == BUFFER_SIZE)
 	{
-		if (handle_buffer(fd, buf, str, &buf_cursor))
+		if (handle_buffer(fd, buf, &buf_cursor))
 			return (str);
 	}
 	buf_start = buf_cursor;
