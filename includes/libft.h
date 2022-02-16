@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2022/02/16 11:10:36 by fvarrin          ###   ########.fr       */
+/*   Updated: 2022/02/16 15:13:28 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void		ft_build_hexabase_upper(char *dest);
 void		ft_build_binary_base(char dest[3]);
 void		ft_build_binary_base(char dest[3]);
 char		*ft_get_next_line(int fd);
+int			ft_abs(int n);
 
 // Linked list
 t_list_el	*ft_lstnew(void *content);
