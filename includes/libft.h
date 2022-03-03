@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 11:41:07 by fvarrin           #+#    #+#             */
-/*   Updated: 2022/02/16 15:13:28 by fvarrin          ###   ########.fr       */
+/*   Updated: 2022/03/03 15:16:43 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,4 +84,5 @@ void		ft_lstdelone(t_list_el *lst, void (*del)(void*));
 void		ft_lstclear(t_list_el **lst, void (*del)(void*));
 void		ft_lstiter(t_list_el *lst, void (*f)(void *));
 t_list_el	*ft_lstmap(t_list_el *lst, void *(*f)(void *), void (*del)(void *));
+t_list_el	*ft_lstcpy(t_list_el *lst, void (*del)(void *));
 #endif

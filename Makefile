@@ -6,7 +6,7 @@
 #    By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/25 11:13:30 by fvarrin           #+#    #+#              #
-#    Updated: 2022/02/16 15:11:28 by fvarrin          ###   ########.fr        #
+#   Updated: 2022/03/03 15:16:53 by fvarrin          ###   ########.fr       # #
 #                                                                              #
 # **************************************************************************** #
 ifndef BUFFER_SIZE
@@ -23,7 +23,7 @@ SRC		= $(addprefix ${SRC_DIR}, ft_isalpha.c ft_isdigit.c ft_isspace.c ft_isalnum
 			ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_swap.c ft_printf.c ft_printf_put.c ft_printf_utils.c ft_count_occurence.c \
 			ft_convert_base.c ft_base_utils.c ft_get_last_char.c ft_get_next_line.c ft_perror.c ft_abs.c)
 LINKED_LIST_SRC	= $(addprefix ${LINKED_LIST_DIR}, ft_lstnew.c ft_lstadd_front.c ft_lstadd_back.c ft_lstsize.c ft_lstlast.c \
-		  ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c)
+		  ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_lstcpy.c)
 OBJ		= $(SRC:.c=.o);
 LINKED_LIST_OBJ	= $(LINKED_LIST_SRC:.c=.o);
 CC 		= gcc
