@@ -6,7 +6,7 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 11:40:30 by fvarrin           #+#    #+#             */
-/*   Updated: 2022/03/03 15:16:26 by fvarrin          ###   ########.fr       */
+/*   Updated: 2022/03/03 15:17:52 by                  ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list_el	*ft_lstcpy(t_list_el *lst, void (*del)(void *))
 	t_list_el	*new_list;
 	t_list_el	*new_el;
 
-	if (!lst || !f || ! del)
+	if (!lst || ! del)
 		return (NULL);
 	new_list = NULL;
 	while (lst)
