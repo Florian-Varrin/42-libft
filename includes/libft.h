@@ -63,6 +63,7 @@ void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 int			ft_printf(const char *str, ...);
+int			ft_printf_fd(int fd, const char *str, ...);
 void		ft_perror(const char *s);
 int			ft_count_occurrence(char *str, char c);
 char		*ft_convert_base(char *nbr, char *base_from, char *base_to);
