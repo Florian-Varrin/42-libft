@@ -13,14 +13,15 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-#include <stdarg.h>
+# include <stdarg.h>
 
 void	ft_handle_char(char c, va_list args, int *print_c, int fd);
 void	ft_putchar_wrapper(char c, int *printed_chars, int fd);
 void	ft_putstr_wrapper(char *str, int *printed_chars, int fd);
 void	ft_build_null_str(char dest[7]);
 void	ft_putint_base(long nbr, char *base, int *printed_chars, int fd);
-void	ft_putuint_base(unsigned long nbr, char *base, int *printed_chars, int fd);
+void	ft_putuint_base(unsigned long nbr, char *base,
+			int *printed_chars, int fd);
 void	ft_putaddr(unsigned long nbr, int *printed_chars, int fd);
 
 #endif

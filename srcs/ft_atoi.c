@@ -6,16 +6,16 @@
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/28 11:29:15 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/11/24 13:22:28 by fvarrin          ###   ########.fr       */
+/*   Updated: 2022/05/31 17:09:14 by fvarrin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long    ft_atoi(const char *str)
+long	ft_atoi(const char *str)
 {
 	int		sign;
-	int		res;
+	long	res;
 
 	while (ft_isspace(*str))
 		str++;
