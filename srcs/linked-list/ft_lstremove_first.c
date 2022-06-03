@@ -17,6 +17,6 @@ void	ft_lstremove_first(t_list_el **alst, void (*del)(void*))
 	t_list_el	*new_first_el;
 
 	new_first_el = (*alst)->next;
-	del(*alst);
+	ft_lstdelone(*alst, del);
 	alst = &new_first_el;
 }

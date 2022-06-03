@@ -27,6 +27,6 @@ void	ft_lstremove_last(t_list_el **alst, void (*del)(void*))
 		i++;
 	}
 	last_el = new_last_el->next;
-	del(last_el);
+	ft_lstdelone(last_el, del);
 	new_last_el->next = NULL;
 }
