@@ -17,6 +17,8 @@ void	ft_lstremove_next(t_list_el *alst, void (*del)(void*))
 	t_list_el	*el_to_delete;
 
 	el_to_delete = alst->next;
+	if (el_to_delete == NULL)
+		return ;
 	alst->next = el_to_delete->next;
 	ft_lstdelone(el_to_delete, del);
 }
