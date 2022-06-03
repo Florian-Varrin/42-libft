@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstremove_last.c                               :+:      :+:    :+:   */
+/*   ft_lstremove_next.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fvarrin <florian.varrin@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,21 +12,13 @@
 
 #include "libft.h"
 
-void	ft_lstremove_last(t_list_el **alst, void (*del)(void*))
+void	ft_lstremove_next(t_list_el *alst, void (*del)(void*))
 {
-	int			i;
-	int			lst_size;
-	t_list_el	*last_el;
-	t_list_el	*new_last_el;
+	t_list_el	*el_to_delete;
 
-	lst_size = ft_lstsize(*alst);
-	i = 0;
-	while (i < lst_size - 1)
-	{
-		new_last_el = (*alst)->next;
-		i++;
-	}
-	last_el = new_last_el->next;
-	ft_lstdelone(last_el, del);
-	new_last_el->next = NULL;
+	el_to_delete = alst->next;
+	if (el_to_delete == NULL)
+		return ;
+	alst->next = el_to_delete->next;
+	ft_lstdelone(el_to_delete, del);
 }
