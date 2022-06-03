@@ -86,4 +86,6 @@ void		ft_lstclear(t_list_el **lst, void (*del)(void*));
 void		ft_lstiter(t_list_el *lst, void (*f)(void *));
 t_list_el	*ft_lstmap(t_list_el *lst, void *(*f)(void *), void (*del)(void *));
 t_list_el	*ft_lstcpy(t_list_el *lst, void (*del)(void *));
+void		ft_lstremove_first(t_list_el **alst, void (*del)(void*));
+void		ft_lstremove_last(t_list_el **alst, void (*del)(void*));
 #endif
